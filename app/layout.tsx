@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             <SidebarProvider>
               <div className="flex min-h-screen">
                 <AppSidebar />
-                <main className="flex-1 transition-all duration-300 bg-gradient-to-b from-purple-50 to-blue-50">
+                <main className="">
                   {children}
                 </main>
               </div>
