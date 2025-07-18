@@ -198,7 +198,7 @@ export default function DailyChallengePages() {
   const currentChallenge = challenges[currentStep]
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="w-screen h-screen mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
         <Link href="/" className="inline-flex items-center text-blue-600">
           <ChevronLeft className="h-5 w-5 mr-1" />

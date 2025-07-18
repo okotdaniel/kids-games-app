@@ -119,7 +119,7 @@ export default function ColorGamePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-100 to-pink-100">
+    <div className="w-screen h-screen bg-gradient-to-b from-orange-100 to-pink-100">
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-6">
           <Link href="/games" className="inline-flex items-center text-blue-600">

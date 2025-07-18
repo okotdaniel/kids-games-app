@@ -4,7 +4,7 @@ import { ChevronLeft, Star, Palette, Shapes, BookOpen, Music, Brain, MoveHorizon
 
 export default function GamesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-100 to-blue-100">
+    <div className="w-screen bg-gradient-to-b from-green-100 to-blue-100">
       <div className="container mx-auto px-4 py-8">
         <Link href="/" className="inline-flex items-center text-blue-600 mb-6">
           <ChevronLeft className="h-5 w-5 mr-1" />

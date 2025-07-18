@@ -60,23 +60,11 @@ export default function HomePage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      {showWelcome && (
-        <motion.div
-          className="mb-8 rounded-3xl bg-gradient-to-r from-purple-600 to-blue-600 p-6 text-center text-white shadow-lg"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -50 }}
-        >
-          <motion.div initial={{ scale: 0.8 }} animate={{ scale: 1 }} transition={{ delay: 0.3, duration: 0.5 }}>
-            <h1 className="text-3xl font-bold">Welcome back, Daniel!</h1>
-            <p className="mt-2">Ready for more learning adventures today?</p>
-          </motion.div>
-        </motion.div>
-      )}
+    <div className="container items-center mx-auto px-4 py-8">
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-        <div className="col-span-1 md:col-span-2">
+      <div className="flex flex-cols  md:grid-cols-3 gap-8">
+        
+        <div className="col-span-1 md:col-span-2  bg-white  p-6 ml-12 justify-center items-center shadow-lg ">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="mb-8">
             <div className="flex flex-col space-y-2 md:flex-row md:items-center md:justify-between md:space-y-0">
               <h2 className="text-2xl font-bold text-purple-700">
@@ -164,12 +152,7 @@ export default function HomePage() {
           </motion.div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="col-span-1"
-        >
+        <div className="col-span-1 md:col-span-1 bg-white  ml-16 shadow-lg  ">
           <h2 className="text-2xl font-bold text-purple-700">My Progress</h2>
 
           <Card className="mt-3 border-2 border-blue-100">
@@ -252,7 +235,9 @@ export default function HomePage() {
               </Link>
             </CardFooter>
           </Card>
-        </motion.div>
+
+        </div>
+
       </div>
 
       <motion.div
